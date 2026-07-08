@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sap.scimono</groupId>
     <artifactId>scimono-parent</artifactId>
-    <version>0.0.80-SNAPSHOT</version>
+    <version>0.0.80.SEE1</version>
     <packaging>pom</packaging>
 
     <name>SAP SCIMono Library</name>
@@ -41,7 +40,7 @@
     <scm>
         <connection>scm:git:git@github.com:seeburger-ag/scimono.git</connection>
         <developerConnection>scm:git:git@github.com:seeburger-ag/scimono.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>scimono-parent-0.0.80.SEE1</tag>
     </scm>
 
     <modules>
