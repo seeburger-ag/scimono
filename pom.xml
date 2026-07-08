@@ -39,9 +39,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/SAP/scimono.git</connection>
-        <developerConnection>scm:git:https://github.com/SAP/scimono.git</developerConnection>
-        <url>https://github.com/SAP/scimono</url>
+        <connection>scm:git:git@github.com:seeburger-ag/scimono.git</connection>
+        <developerConnection>scm:git:git@github.com:seeburger-ag/scimono.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 
     <modules>
