@@ -3,7 +3,7 @@
     <parent>
         <artifactId>scimono-examples</artifactId>
         <groupId>com.sap.scimono.examples</groupId>
-        <version>0.0.80.SEE1</version>
+        <version>0.0.80.SEE2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

@@ -3,7 +3,7 @@
 
     <groupId>com.sap.scimono</groupId>
     <artifactId>scimono-parent</artifactId>
-    <version>0.0.80.SEE1</version>
+    <version>0.0.80.SEE2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>SAP SCIMono Library</name>
@@ -40,7 +40,7 @@
     <scm>
         <connection>scm:git:git@github.com:seeburger-ag/scimono.git</connection>
         <developerConnection>scm:git:git@github.com:seeburger-ag/scimono.git</developerConnection>
-        <tag>scimono-parent-0.0.80.SEE1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <modules>
