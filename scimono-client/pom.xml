@@ -24,6 +24,10 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+                    <!-- The JAX-RS client uses reflection to enable the HTTP PATCH method on
+                         java.net.HttpURLConnection. Since JDK 16 strong encapsulation requires
+                         java.net to be explicitly opened for this reflection to succeed. -->
+                    <argLine>--add-opens java.base/java.net=ALL-UNNAMED</argLine>
                 </configuration>
             </plugin>
         </plugins>

@@ -20,6 +20,7 @@ import org.mockito.invocation.InvocationOnMock;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
@@ -54,7 +55,7 @@ public class ValuePathAttributesValidationVisitorTest {
 
   @BeforeEach
   public void setup() {
-    schemaAPI = spy(SchemasCallback.class);
+    schemaAPI = spy(new BaseSchemasCallback());
     // @formatter:off
     doReturn(new ArrayList<>(REQUIRED_SCHEMAS.values())).when(schemaAPI).getSchemas();
     doAnswer((InvocationOnMock invocation) -> REQUIRED_SCHEMAS.get((String) invocation.getArguments()[0]))
@@ -150,5 +151,32 @@ public class ValuePathAttributesValidationVisitorTest {
         .type("string")
         .build();
  // @formatter:on
+  }
+
+  private static class BaseSchemasCallback implements SchemasCallback {
+    @Override
+    public Schema getCustomSchema(final String schemaId) {
+      return null;
+    }
+
+    @Override
+    public void createCustomSchema(final Schema schema) {
+      // no-op test implementation
+    }
+
+    @Override
+    public List<Schema> getCustomSchemas() {
+      return new ArrayList<>();
+    }
+
+    @Override
+    public void deleteCustomSchema(final String schemaId) {
+      // no-op test implementation
+    }
+
+    @Override
+    public boolean isValidSchemaName(final String schemaName) {
+      return false;
+    }
   }
 }
